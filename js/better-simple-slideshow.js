@@ -76,7 +76,7 @@ var makeBSS = function (el, options) {
                     that.showCurrent(-1); // decrement & show
                 }, false);
                 
-                el.onkeydown = function (e) {
+                document.onkeydown = function (e) {
                     e = e || window.event;
                     if (e.keyCode === 37) {
                         that.showCurrent(-1); // decrement & show
